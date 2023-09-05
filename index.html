@@ -9,6 +9,21 @@
 </head>
 <body>
     <h1>Iffy</h1>
-    <img src="https://fastly.picsum.photos/id/343/200/300.jpg?hmac=_7ttvLezG-XONDvp0ILwQCv50ivQa_oewm7m6xV2uZA" alt="image displayed because not github pages">
-</body>
+    <script>
+        console.log("hello");
+        console.log(window.location.host);
+        const onGithub = console.log(window.location.host.includes('github.io'));
+        console.log(onGithub);
+
+        if(onGithub){
+        document.write('<img src="https://fastly.picsum.photos/id/343/200/300.jpg?hmac=_7ttvLezG-XONDvp0ILwQCv50ivQa_oewm7m6xV2uZA" alt="image displayed because ON github pages">')
+        
+    }  else{
+                document.write('<img src="https://fastly.picsum.photos/id/200/200/300.jpg?hmac=XVCLpc2Ddr652IrKMt3L7jISDD4au5O9ZIr3fwBtxo8" alt="image displayed because not github pages">')
+
+    }
+        </script> 
+        </body>
+    
+    
 </html>
